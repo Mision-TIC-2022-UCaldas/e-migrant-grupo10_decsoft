@@ -11,3 +11,17 @@ C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.csproj.CoreCompileInput
 C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.dll
 C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.pdb
 C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.genruntimeconfig.cache
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\bin\Debug\netcoreapp3.1\iMC.exe
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\bin\Debug\netcoreapp3.1\iMC.deps.json
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\bin\Debug\netcoreapp3.1\iMC.runtimeconfig.json
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\bin\Debug\netcoreapp3.1\iMC.runtimeconfig.dev.json
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\bin\Debug\netcoreapp3.1\iMC.dll
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\bin\Debug\netcoreapp3.1\iMC.pdb
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\obj\Debug\netcoreapp3.1\iMC.csproj.AssemblyReference.cache
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\obj\Debug\netcoreapp3.1\iMC.GeneratedMSBuildEditorConfig.editorconfig
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\obj\Debug\netcoreapp3.1\iMC.AssemblyInfoInputs.cache
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\obj\Debug\netcoreapp3.1\iMC.AssemblyInfo.cs
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\obj\Debug\netcoreapp3.1\iMC.csproj.CoreCompileInputs.cache
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\obj\Debug\netcoreapp3.1\iMC.dll
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\obj\Debug\netcoreapp3.1\iMC.pdb
+D:\Decsoft\e-migrant-grupo10_decsoft\iMC\obj\Debug\netcoreapp3.1\iMC.genruntimeconfig.cache
