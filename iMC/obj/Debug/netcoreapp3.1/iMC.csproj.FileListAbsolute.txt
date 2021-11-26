@@ -1,0 +1,13 @@
+C:\xampp\htdocs\maraton2\iMC\bin\Debug\netcoreapp3.1\iMC.exe
+C:\xampp\htdocs\maraton2\iMC\bin\Debug\netcoreapp3.1\iMC.deps.json
+C:\xampp\htdocs\maraton2\iMC\bin\Debug\netcoreapp3.1\iMC.runtimeconfig.json
+C:\xampp\htdocs\maraton2\iMC\bin\Debug\netcoreapp3.1\iMC.runtimeconfig.dev.json
+C:\xampp\htdocs\maraton2\iMC\bin\Debug\netcoreapp3.1\iMC.dll
+C:\xampp\htdocs\maraton2\iMC\bin\Debug\netcoreapp3.1\iMC.pdb
+C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.csprojAssemblyReference.cache
+C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.AssemblyInfoInputs.cache
+C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.AssemblyInfo.cs
+C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.dll
+C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.pdb
+C:\xampp\htdocs\maraton2\iMC\obj\Debug\netcoreapp3.1\iMC.genruntimeconfig.cache
