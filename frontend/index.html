@@ -119,23 +119,92 @@
 
                             <button type="submit" class="btn btn-warning fw-bold">Enviar</button>
                             <br>
-                            </div><a href="#" class="btn btn-primary">Actualizar Datos</a><div>
+                            <a href="#" class="btn btn-primary">Actualizar Datos</a>
                             
-                            
+                            <fieldset>                      <!--tercer punto-->
+                                <legend>Crear Grupo</legend>
+                                <input type="text" id="cGrupo"/>
+                                <input type="button" value="Crear" onclick="Crear()"/>
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="button" value="Parentezco" onclick="Parentezco()"/>
+                                <textarea name="CGrupo" id="CGrupo" cols="30" rows="10"></textarea>
+                                
+                            </fieldset>
+
+                            <!--5 punto-->
+
+                            <h2>Necesidades:</h2>
+                           
+                            <div class="col-md-3 position-relative">
+                                <label for="salud">Tipo Salud</label>
+                                <select name="salud" id="salud" class="form-select" >
+                                    <option selected disabled value="">descripcion:</option>
+                                    <option value="">Baja</option>
+                                    <option value="">Media</option>
+                                    <option value="">Alta</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                                <label for="alimentacion">Alimentacion</label>
+                                <select name="alimentacion" id="alimentacion" class="form-select" >
+                                    <option selected disabled value="">descripcion:</option>
+                                    <option value="">Baja</option>
+                                    <option value="">Media</option>
+                                    <option value="">Alta</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                                <label for="empleo">Empleo</label>
+                                <select name="empleo" id="empleo" class="form-select" >
+                                    <option selected disabled value="">descripcion:</option>
+                                    <option value="">Baja</option>
+                                    <option value="">Media</option>
+                                    <option value="">Alta</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                                <label for="alojamientoT">Alojamiento Temporal</label>
+                                <select name="alojamientoT" id="alojamientoT" class="form-select" >
+                                    <option selected disabled value="">descripcion:</option>
+                                    <option value="">Baja</option>
+                                    <option value="">Media</option>
+                                    <option value="">Alta</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                                <label for="alojamientoP">Alojamiento Permanente</label>
+                                <select name="alojamientoP" id="alojamientoP" class="form-select" >
+                                    <option selected disabled value="">descripcion:</option>
+                                    <option value="">Baja</option>
+                                    <option value="">Media</option>
+                                    <option value="">Alta</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                                <label for="educacion">Educacion</label>
+                                <select name="educacion" id="educacion" class="form-select" >
+                                    <option selected disabled value="">descripcion:</option>
+                                    <option value="">Baja</option>
+                                    <option value="">Media</option>
+                                    <option value="">Alta</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                                <label for="ayudaL">Ayuda Legal</label>
+                                <select name="ayudaL" id="ayudaL" class="form-select" >
+                                    <option selected disabled value="">descripcion:</option>
+                                    <option value="">Baja</option>
+                                    <option value="">Media</option>
+                                    <option value="">Alta</option>
+                                </select>
+                            </div>
+
+
+
                         </form>
                     </div>
-                    <!--tercer punto-->
-                    <div>
-                        <fieldset>
-                            <legend>Crear Grupo</legend>
-                            <input type="text" id="cGrupo"/>
-                            <input type="button" value="Crear" onclick="Crear()"/>
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="button" value="Parentezco" onclick="Parentezco()"/>
-                            <textarea name="CGrupo" id="CGrupo" cols="30" rows="10"></textarea>
-                            
-                        </fieldset>
-                    </div>
+                    
+                 
             </div>
         </div>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
