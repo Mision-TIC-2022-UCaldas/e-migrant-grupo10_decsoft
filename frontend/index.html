@@ -9,7 +9,7 @@
 
         <title>¡E-MIGRANT!</title>
     </head>
-    <body>
+    <body style="background-color: rgb(241, 183, 56);">
 
     <a href="consultarServicios.html">Consultar Servicios</a>
     |
@@ -88,7 +88,7 @@
 
                             <div class="col-md-3 position-relative">
 
-                                <label for="ciudad" class="form-label">Ciudad</label>
+                                <label for="ciudad" class="form-label">Ciudad</label><br>
                                 <input id="ciudad" name="ciudad" type="text" class="form-label" >
                                
 
@@ -140,11 +140,32 @@
                                     <option value="">En busca de Empleo</option>
                                     <option value="">Independiente</option>
                                     <option value="">Ama de Casa</option>
-                                </select>
+                                </select> 
+                            </div>
+                            <br><br>
+
+                            <div>
                                 
                             </div>
 
+                            <div>
+                                <label>Registrese ó Inicie Secion:</label>
+                                <div class="col-md-3 position-relative">
+                                    <label for="user" class="form-text">Usuario</label><br>
+                                    <input id="user" name="user" type="text" class="form-label"required>
+                                    <div class="valid-tooltip">ok</div>
+                                <div class="invalid-tooltip">Complete los datos</div>
+                                </div>
+                                <div class="col-md-3 position-relative">
+                                    <label for="contraseña" class="form-text">contraseña</label><br>
+                                    <input id="pass" name="pass" type="text" class="form-label"required>
+                                    <div class="valid-tooltip">ok</div>
+                                <div class="invalid-tooltip">Complete los datos</div>
+                                </div>
+                                
+                            </div>
 
+                            <br><br>
 
                             <button type="submit" class="btn btn-warning fw-bold">Enviar</button>
                             <br>
