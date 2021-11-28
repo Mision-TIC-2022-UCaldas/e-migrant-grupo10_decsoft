@@ -1,0 +1,23 @@
+.register{width: 74%;
+    width: 74%;
+    height: 51%;
+    margin-left: 47px;
+    background-color: gainsboro;
+    border: solid;
+    padding: 10px;
+} 
+
+.container{
+    background-color: white;
+}
+
+body {
+    background-image: url('https://p4.wallpaperbetter.com/wallpaper/340/619/692/nature-cows-meadow-the-herd-wallpaper-preview.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+.tituloPagina{ 
+    margin: 0 0 20px 0px;
+}

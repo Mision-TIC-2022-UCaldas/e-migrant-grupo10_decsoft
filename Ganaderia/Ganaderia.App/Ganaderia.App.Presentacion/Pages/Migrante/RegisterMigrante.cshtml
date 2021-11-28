@@ -1,0 +1,25 @@
+﻿@page
+@model Ganaderia.App.Presentacion.Pages.RegisterMigranteModel
+@{
+    Layout = "~/Pages/Shared/_layoutLogin.cshtml";
+    ViewData["Title"] = "Entidad";
+}
+<form>
+    <p>Nombres <input type="text" name="nombres"> </p>
+    <p>Apellidos <input type="text" name="apellidos"> </p>
+    <p>Tipo de documento <input type="text" name="tdocumento"> </p>
+    <p>Numero de documento <input type="text" name="documento"> </p>
+    <p>Pais de origen <input type="text" name="pais"> </p>
+    <p>Fecha de nacimiento <input type="date" name="nacimiento"> </p>
+    <p>Email <input type="email" name="email"> </p>
+    <p>Telefono <input type="text" name="telefono"> </p>
+    <p>Dirección actual <input type="text" name="direccion"> </p>
+    <p>Ciudad <input type="text" name="ciudad"> </p>
+    <p>Situacion laboral <input type="text" name="slaboral"> </p>
+    <p>Usuario <input type="text" name="usuario"> </p>
+    <p>Contrasena <input type="password" name="clave"> </p>
+    <p><input type="submit" value="guardar" asp-page-handler="Register"></p>
+</form>
+
+
+</table>
