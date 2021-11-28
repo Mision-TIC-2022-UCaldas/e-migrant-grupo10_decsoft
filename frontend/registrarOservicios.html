@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>Validación forms - Bootstrap!</title>
+    </head>
+    <body style="background-color: rgb(241, 183, 56);">
+        <a href="index.html">Inicio</a>
+        <h1>Registrar Servicios, Oferta de Servicios</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <a href="consultaOfertaServicios.html">Consultar Servicios Ofertados</a>
+
+
+                            <div class="col-md-3 position-relative">
+                                <label for="nServicio">Nombre del Servicio</label>
+                                <select name="nServicio" id="nServicio" class="form-select" required>
+                                    <option selected disabled value="">Seleccione..</option>
+                                    <option value="">Salud</option>
+                                    <option value="">Alimentacion</option>
+                                    <option value="">Empleo</option>
+                                    <option value="">Alojamiento Temporal</option>
+                                    <option value="">Alojamiento Permanente</option>
+                                    <option value="">Educacion</option>
+                                    <option value="">Ayuda legal</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <input type="number" name="nMintegrantes" placeholder="Numero de Integrantes" >
+                            </div>
+                            
+                            
+                            <div>
+                                <label for="fIservicio">Fecha inicio oferta del servicio</label>
+                                <input type="date" name="fIservicio" id="fIservicio" >
+
+                            </div>
+
+
+                            <div>
+                                <label for="fFservicio">Fecha finalización oferta del servicio</label>
+                                <input type="date" name="fFservicio" id="fFservicio" >
+
+                            </div>
+
+                            <label for="eServicio">Estado del Servicio:</label>
+                            <select name="eCservicio" id="eCservicio" class="form-select" >
+                                <option selected disabled value="">Seleccione</option>
+                                <option value="">Activos</option>
+                                <option value="">Cerrados</option>
+                                <option value="">Con cupo</option>
+                                <option value="">Sin cupo</option>
+                      
+                            </select>
+                            
+ 
+
+                            <button type="submit" name="aceptaRoS" class="btn btn-dark fw-bold">Enviar</button>
+                            <button type="submit" name="actualizaRoS" class="btn btn-dark fw-bold">Actualizar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <!--Ingresamos el código de validación...-->
+            <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                        }else{
+                            alert("DATOS VALIDADOS.")
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                    })
+                })()
+               
+            </script>
+    </body>
+</html>

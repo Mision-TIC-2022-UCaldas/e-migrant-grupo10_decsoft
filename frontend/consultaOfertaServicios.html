@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsultaServicios</title>
+</head>
+<body style="background-color: rgb(241, 183, 56);">
+    <a href="index.html">Inicio</a>
+    <br><br>
+
+    <div class="col-md-3 position-relative">
+        <button type="button" id="fIc1" class="btn btn-secondary">Total</button><br>
+   
+    </div><br><br>
+
+    <div>
+        <label for="fechaConsultaIservicio">Fecha inicio de servicio</label>
+        <input type="date" name="fIc3" id="fIc3">
+    </div><br><br>
+
+    <div class="col-md-3 position-relative">
+        <label for="eCservicio">Estado de cada servicio</label>
+        
+        <select name="eCservicio" id="eCservicio" class="form-select" >
+            <option selected disabled value="">Seleccione</option>
+            <option value="">Activos</option>
+            <option value="">Cerrados</option>
+            <option value="">Con cupo</option>
+            <option value="">Sin cupo</option>
+  
+        </select>
+    </div><br><br>
+    
+    <textarea name="respuesta_consultaS" id="respuesta_consultas" cols="30" rows="10"></textarea>
+
+    <div class="col-md-3 position-relative">
+        <br>
+        <button type="button" id="cS01" class="btn btn-secondary">Consulta servicio</button>
+    
+    </div>
+</body>
+</html>
