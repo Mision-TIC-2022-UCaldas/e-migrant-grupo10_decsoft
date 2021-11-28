@@ -42,7 +42,7 @@ namespace Aplicacion.App.Dominio
             {
                 opciones.Password.RequiredLength = 8;
                 opciones.Password.RequiredUniqueChars = 3;
-                opciones.Password.RequireNonAlphanumeric = false;
+                opciones.Password.RequireNonAlphanumeric =false;
         });
         }
     }
