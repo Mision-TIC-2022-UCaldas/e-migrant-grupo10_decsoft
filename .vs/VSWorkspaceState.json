@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\frontend"
+    "\\emigrant\\emigrant",
+    "\\iMC\\obj",
+    "\\iMC\\obj\\Release",
+    "\\iMC\\obj\\Release\\netcoreapp3.1"
   ],
-  "SelectedNode": "\\frontend\\consultaGrupo.html",
   "PreviewInSolutionExplorer": false
 }
