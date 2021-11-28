@@ -8,16 +8,19 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <title>Validación forms - Bootstrap!</title>
+        <title>REGISTRO NECESIDADES</title>
     </head>
     <body style="background-color: rgb(241, 183, 56);">
         <a href="index.html">Inicio</a>
-        <h1>NECESIDADES</h1>
+        <h1>REGISTRO NECESIDADES:</h1>
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="shadow-lg p-3 mb-5 mt-4 bg-body rounded">
                         <form class="row g-3 needs-validation" novalidate>
+
+                            <a href="consultaNecesidades.html">Consulta Necesidades</a>
+
                             <div class="col-md-3 position-relative">
                                 <label for="salud">Tipo Salud</label>
                                 <select name="salud" id="salud" class="form-select" required>
@@ -82,6 +85,43 @@
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-dark fw-bold">Enviar</button>
+                            
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Actualiza Datos
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Actualiza Datos Necesidades</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Ingrese Sus Necesidades
+          <br>
+
+          <input type="text" name="" placeholder="Salud">
+          <input type="text" name="" placeholder="Alimentacion">
+          <input type="text" name="" placeholder="Empleo">
+          <input type="text" name="" placeholder="Alojamiento temporal">
+          <input type="text" name="" placeholder="Alojamiento permanente">
+          <input type="text" name="" placeholder="Educacion">
+          <input type="text" name="" placeholder="Ayuda legal">
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar Cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
                         </form>
                     </div>
                 </div>

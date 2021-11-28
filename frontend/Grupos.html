@@ -8,31 +8,33 @@
 </head>
 <body style="background-color: rgb(241, 183, 56);">
     <a href="index.html">Inicio</a>
-    <div>
+    <div><br>
         <a href="consultaGrupo.html">Consulta tus grupos</a>
         <br><br>
         <fieldset>                      <!--tercer punto-->
             <legend>Crear Grupo</legend>
 
-            
+            <input type="text" name="IdmigrantCrearG" placeholder="ID Migrante">
         
             <input type="text" name="parentezco" placeholder="Parentezco" />
 
-            <input type="text" name="crearGrupo" placeholder="Crear Grupo" />
+            <input type="text" name="nombreCrearG" placeholder="Nombre del grupo">
+
+            <button  type="submit" name="crearGrupo" text="Crear Grupo" >Crear Gupo</button>
           
-        
+            <button type="submit">Agregar al Grupo</button>
             <!--<label for="nombre" class="form-label"></label>-->
             
             <div>
-            </div><textarea name="CGrupo" id="CGrupo" cols="30" rows="10"></textarea>
+            </div><textarea name="CGrupo" id="CGrupo" cols="30" rows="10" ></textarea>
 
             <div class="row">
                 <div class="col">
                 </div>
                 <div class="col-auto">
-            <input type="text" id="enviarMensaje"/>
+            <input type="text" id="enviarMensaje" placeholder="Nombre del Grupo"/>
             <input type="button" value="Enviar mensaje al grupo" onclick="enviarMensajeG()"/>
-            <textarea name="enviarMensaj" id="" cols="30" rows="10"></textarea>
+            <textarea name="enviarMensaj" id="" cols="30" rows="10" placeholder="Redacte su mensaje"></textarea>
             <div>
         
         </fieldset>
