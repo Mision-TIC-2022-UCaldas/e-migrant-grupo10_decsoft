@@ -17,17 +17,27 @@
 
     <div class="col-md-3 position-relative">
         <label for="Pnecesidad">Por necesidad</label>
+        <br>
         <select name="Pnecesidad" id="Pnecesidad" class="form-select" >
             <option selected disabled value="">Seleccione..</option>
-            <option value="">Salud</option>
-            <option value="">Alimentacion</option>
-            <option value="">Empleo</option>
-            <option value="">Alojamiento temporal</option>
-            <option value="">Alojamiento permanente</option>
-            <option value="">Educacion</option>
-            <option value="">Atuda legal</option>
+            <option value="">101-Salud</option>
+            <option value="">102-Alimentacion</option>
+            <option value="">103-Empleo</option>
+            <option value="">104-Alojamiento temporal</option>
+            <option value="">105-Alojamiento permanente</option>
+            <option value="">106-Educacion</option>
+            <option value="">107-Ayuda legal</option>
         </select>
     </div>
-    <textarea name="respuesta_consultaS" id="respuesta_consultaS" cols="30" rows="10"></textarea>
+    
+    <textarea name="respuesta_consultaS" id="respuesta_consultas" cols="30" rows="10"></textarea>
+
+    <div class="col-md-3 position-relative">
+        <br>
+        <button type="button" class="btn btn-secondary">Aceptar servicio</button>
+        <button type="button" class="btn btn-secondary">Rechazar servicio</button>
+        <button type="button" class="btn btn-secondary">Cancelar servicio</button>
+        <button type="button" class="btn btn-secondary">Trasladar servicios</button>
+    </div>
 </body>
 </html>
