@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ModelDecsoft.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AmigosFamiliares">
+          <Key>
+            <PropertyRef Name="idAmigosFamiliares" />
+          </Key>
+          <Property Name="idAmigosFamiliares" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="apellido" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="tipo_documento" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="No_documento" Type="int" Nullable="false" />
+          <Property Name="pais_origen" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="correo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="fecha_nacimiento" Type="date" Nullable="false" />
+          <Property Name="telefono" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="direccion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ciudad" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="situacionlaboral" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CiudadActual">
+          <Key>
+            <PropertyRef Name="idCiudadActual" />
+          </Key>
+          <Property Name="idCiudadActual" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ciudad_Actual" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="departamento" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EntidadColaboradora">
+          <Key>
+            <PropertyRef Name="idEntidadColaboradora" />
+          </Key>
+          <Property Name="idEntidadColaboradora" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="razon_social" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NIT" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="direccion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="telefono" Type="int" Nullable="false" />
+          <Property Name="correo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="pagina_web" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="sector" Type="int" Nullable="false" />
+          <Property Name="servicio" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Migrantes">
+          <Key>
+            <PropertyRef Name="idmigrante" />
+          </Key>
+          <Property Name="idmigrante" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="apellido" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="tipo_documento" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="No_documento" Type="int" Nullable="false" />
+          <Property Name="pais_origen" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="correo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="fecha_nacimiento" Type="date" Nullable="false" />
+          <Property Name="telefono" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="direccion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ciudad_actual" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="situacion_laboral" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Necesidad">
+          <Key>
+            <PropertyRef Name="idnecesidad" />
+          </Key>
+          <Property Name="idnecesidad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="salud" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="alimentacion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="empleo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="alojamiento:temporal" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="alojamiento_permanente" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="educacion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ayuda_legal" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sector">
+          <Key>
+            <PropertyRef Name="idsector" />
+          </Key>
+          <Property Name="idsector" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="publico" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="privado" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="sin_animo_lucro" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="no_gubernamental" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="otro" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Servicio">
+          <Key>
+            <PropertyRef Name="idservicio" />
+          </Key>
+          <Property Name="idservicio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="salud" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="juridicos" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="viveres" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="comida_preparada" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="empleo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="alojamiento_temporal" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="alojamiento_permanente" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="educacion" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="otros" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SituacionLaboral">
+          <Key>
+            <PropertyRef Name="idSituacionLaboral" />
+          </Key>
+          <Property Name="idSituacionLaboral" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="temporal" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="fijo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="informal" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ama_de_casa" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="desempleado" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Solicitud">
+          <Key>
+            <PropertyRef Name="idSolicitud" />
+          </Key>
+          <Property Name="idSolicitud" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="servicio" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="fecha_solicitud" Type="date" Nullable="false" />
+          <Property Name="migrante" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ModelDecsoftStoreContainer">
+          <EntitySet Name="AmigosFamiliares" EntityType="Self.AmigosFamiliares" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CiudadActual" EntityType="Self.CiudadActual" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EntidadColaboradora" EntityType="Self.EntidadColaboradora" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Migrantes" EntityType="Self.Migrantes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Necesidad" EntityType="Self.Necesidad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sector" EntityType="Self.Sector" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Servicio" EntityType="Self.Servicio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SituacionLaboral" EntityType="Self.SituacionLaboral" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Solicitud" EntityType="Self.Solicitud" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ModelDecsoft" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AmigosFamiliares">
+          <Key>
+            <PropertyRef Name="idAmigosFamiliares" />
+          </Key>
+          <Property Name="idAmigosFamiliares" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="tipo_documento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="No_documento" Type="Int32" Nullable="false" />
+          <Property Name="pais_origen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="fecha_nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ciudad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="situacionlaboral" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="CiudadActual" Relationship="ModelDecsoft.AmigosFamiliaresCiudadActual" FromRole="AmigosFamiliares" ToRole="CiudadActual" />
+          <NavigationProperty Name="SituacionLaboral" Relationship="ModelDecsoft.AmigosFamiliaresSituacionLaboral" FromRole="AmigosFamiliares" ToRole="SituacionLaboral" />
+          <NavigationProperty Name="Solicitud" Relationship="ModelDecsoft.SolicitudAmigosFamiliares" FromRole="AmigosFamiliares" ToRole="Solicitud" />
+          <Property Name="Solicitud_idSolicitud" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CiudadActual">
+          <Key>
+            <PropertyRef Name="idCiudadActual" />
+          </Key>
+          <Property Name="idCiudadActual" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ciudad_Actual" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="departamento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="AmigosFamiliares" Relationship="ModelDecsoft.AmigosFamiliaresCiudadActual" FromRole="CiudadActual" ToRole="AmigosFamiliares" />
+          <Property Name="AmigosFamiliares_idAmigosFamiliares" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Migrantes" Relationship="ModelDecsoft.MigrantesCiudadActual" FromRole="CiudadActual" ToRole="Migrantes" />
+          <Property Name="Migrantes_idmigrante" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EntidadColaboradora">
+          <Key>
+            <PropertyRef Name="idEntidadColaboradora" />
+          </Key>
+          <Property Name="idEntidadColaboradora" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="razon_social" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NIT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="telefono" Type="Int32" Nullable="false" />
+          <Property Name="correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="pagina_web" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="sector" Type="Int32" Nullable="false" />
+          <Property Name="servicio" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Sector" Relationship="ModelDecsoft.EntidadColaboradoraSector" FromRole="EntidadColaboradora" ToRole="Sector" />
+          <NavigationProperty Name="Necesidad" Relationship="ModelDecsoft.EntidadColaboradoraNecesidad" FromRole="EntidadColaboradora" ToRole="Necesidad" />
+          <NavigationProperty Name="Servicio" Relationship="ModelDecsoft.EntidadColaboradoraServicio" FromRole="EntidadColaboradora" ToRole="Servicio" />
+        </EntityType>
+        <EntityType Name="Migrantes">
+          <Key>
+            <PropertyRef Name="idmigrante" />
+          </Key>
+          <Property Name="idmigrante" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="apellido" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="tipo_documento" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="No_documento" Type="Int32" Nullable="false" />
+          <Property Name="pais_origen" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="correo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="fecha_nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ciudad_actual" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="situacion_laboral" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="CiudadActual" Relationship="ModelDecsoft.MigrantesCiudadActual" FromRole="Migrantes" ToRole="CiudadActual" />
+          <NavigationProperty Name="SituacionLaboral" Relationship="ModelDecsoft.MigrantesSituacionLaboral" FromRole="Migrantes" ToRole="SituacionLaboral" />
+          <NavigationProperty Name="Solicitud" Relationship="ModelDecsoft.SolicitudMigrantes" FromRole="Migrantes" ToRole="Solicitud" />
+          <Property Name="Solicitud_idSolicitud" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Necesidad">
+          <Key>
+            <PropertyRef Name="idnecesidad" />
+          </Key>
+          <Property Name="idnecesidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="salud" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="alimentacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="empleo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="alojamiento_temporal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="alojamiento_permanente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="educacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ayuda_legal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="EntidadColaboradora" Relationship="ModelDecsoft.EntidadColaboradoraNecesidad" FromRole="Necesidad" ToRole="EntidadColaboradora" />
+          <Property Name="EntidadColaboradora_idEntidadColaboradora" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sector">
+          <Key>
+            <PropertyRef Name="idsector" />
+          </Key>
+          <Property Name="idsector" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="publico" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="privado" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="sin_animo_lucro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="no_gubernamental" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="otro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="EntidadColaboradora" Relationship="ModelDecsoft.EntidadColaboradoraSector" FromRole="Sector" ToRole="EntidadColaboradora" />
+          <Property Name="EntidadColaboradora_idEntidadColaboradora" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Servicio">
+          <Key>
+            <PropertyRef Name="idservicio" />
+          </Key>
+          <Property Name="idservicio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="salud" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="juridicos" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="viveres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="comida_preparada" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="empleo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="alojamiento_temporal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="alojamiento_permanente" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="educacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="otros" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="EntidadColaboradora" Relationship="ModelDecsoft.EntidadColaboradoraServicio" FromRole="Servicio" ToRole="EntidadColaboradora" />
+          <Property Name="EntidadColaboradora_idEntidadColaboradora" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Solicitud" Relationship="ModelDecsoft.SolicitudServicio" FromRole="Servicio" ToRole="Solicitud" />
+          <Property Name="Solicitud_idSolicitud" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SituacionLaboral">
+          <Key>
+            <PropertyRef Name="idSituacionLaboral" />
+          </Key>
+          <Property Name="idSituacionLaboral" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="temporal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="fijo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="informal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ama_de_casa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="desempleado" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="AmigosFamiliares" Relationship="ModelDecsoft.AmigosFamiliaresSituacionLaboral" FromRole="SituacionLaboral" ToRole="AmigosFamiliares" />
+          <Property Name="AmigosFamiliares_idAmigosFamiliares" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Migrantes" Relationship="ModelDecsoft.MigrantesSituacionLaboral" FromRole="SituacionLaboral" ToRole="Migrantes" />
+          <Property Name="Migrantes_idmigrante" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Solicitud">
+          <Key>
+            <PropertyRef Name="idSolicitud" />
+          </Key>
+          <Property Name="idSolicitud" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="servicio" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="fecha_solicitud" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="migrante" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Migrantes" Relationship="ModelDecsoft.SolicitudMigrantes" FromRole="Solicitud" ToRole="Migrantes" />
+          <NavigationProperty Name="AmigosFamiliares" Relationship="ModelDecsoft.SolicitudAmigosFamiliares" FromRole="Solicitud" ToRole="AmigosFamiliares" />
+          <NavigationProperty Name="Servicio" Relationship="ModelDecsoft.SolicitudServicio" FromRole="Solicitud" ToRole="Servicio" />
+        </EntityType>
+        <EntityContainer Name="DecsoftEntitiesconect" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AmigosFamiliares" EntityType="Self.AmigosFamiliares" />
+          <EntitySet Name="CiudadActual" EntityType="Self.CiudadActual" />
+          <EntitySet Name="EntidadColaboradora" EntityType="Self.EntidadColaboradora" />
+          <EntitySet Name="Migrantes" EntityType="Self.Migrantes" />
+          <EntitySet Name="Necesidad" EntityType="Self.Necesidad" />
+          <EntitySet Name="Sector" EntityType="Self.Sector" />
+          <EntitySet Name="Servicio" EntityType="Self.Servicio" />
+          <EntitySet Name="SituacionLaboral" EntityType="Self.SituacionLaboral" />
+          <EntitySet Name="Solicitud" EntityType="Self.Solicitud" />
+          <AssociationSet Name="AmigosFamiliaresCiudadActual" Association="ModelDecsoft.AmigosFamiliaresCiudadActual">
+            <End Role="AmigosFamiliares" EntitySet="AmigosFamiliares" />
+            <End Role="CiudadActual" EntitySet="CiudadActual" />
+          </AssociationSet>
+          <AssociationSet Name="MigrantesCiudadActual" Association="ModelDecsoft.MigrantesCiudadActual">
+            <End Role="Migrantes" EntitySet="Migrantes" />
+            <End Role="CiudadActual" EntitySet="CiudadActual" />
+          </AssociationSet>
+          <AssociationSet Name="AmigosFamiliaresSituacionLaboral" Association="ModelDecsoft.AmigosFamiliaresSituacionLaboral">
+            <End Role="AmigosFamiliares" EntitySet="AmigosFamiliares" />
+            <End Role="SituacionLaboral" EntitySet="SituacionLaboral" />
+          </AssociationSet>
+          <AssociationSet Name="MigrantesSituacionLaboral" Association="ModelDecsoft.MigrantesSituacionLaboral">
+            <End Role="Migrantes" EntitySet="Migrantes" />
+            <End Role="SituacionLaboral" EntitySet="SituacionLaboral" />
+          </AssociationSet>
+          <AssociationSet Name="EntidadColaboradoraSector" Association="ModelDecsoft.EntidadColaboradoraSector">
+            <End Role="EntidadColaboradora" EntitySet="EntidadColaboradora" />
+            <End Role="Sector" EntitySet="Sector" />
+          </AssociationSet>
+          <AssociationSet Name="EntidadColaboradoraNecesidad" Association="ModelDecsoft.EntidadColaboradoraNecesidad">
+            <End Role="EntidadColaboradora" EntitySet="EntidadColaboradora" />
+            <End Role="Necesidad" EntitySet="Necesidad" />
+          </AssociationSet>
+          <AssociationSet Name="EntidadColaboradoraServicio" Association="ModelDecsoft.EntidadColaboradoraServicio">
+            <End Role="EntidadColaboradora" EntitySet="EntidadColaboradora" />
+            <End Role="Servicio" EntitySet="Servicio" />
+          </AssociationSet>
+          <AssociationSet Name="SolicitudMigrantes" Association="ModelDecsoft.SolicitudMigrantes">
+            <End Role="Solicitud" EntitySet="Solicitud" />
+            <End Role="Migrantes" EntitySet="Migrantes" />
+          </AssociationSet>
+          <AssociationSet Name="SolicitudAmigosFamiliares" Association="ModelDecsoft.SolicitudAmigosFamiliares">
+            <End Role="Solicitud" EntitySet="Solicitud" />
+            <End Role="AmigosFamiliares" EntitySet="AmigosFamiliares" />
+          </AssociationSet>
+          <AssociationSet Name="SolicitudServicio" Association="ModelDecsoft.SolicitudServicio">
+            <End Role="Solicitud" EntitySet="Solicitud" />
+            <End Role="Servicio" EntitySet="Servicio" />
+          </AssociationSet>
+        </EntityContainer>
+        <Association Name="AmigosFamiliaresCiudadActual">
+          <End Type="ModelDecsoft.AmigosFamiliares" Role="AmigosFamiliares" Multiplicity="1" />
+          <End Type="ModelDecsoft.CiudadActual" Role="CiudadActual" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AmigosFamiliares">
+              <PropertyRef Name="idAmigosFamiliares" />
+            </Principal>
+            <Dependent Role="CiudadActual">
+              <PropertyRef Name="AmigosFamiliares_idAmigosFamiliares" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MigrantesCiudadActual">
+          <End Type="ModelDecsoft.Migrantes" Role="Migrantes" Multiplicity="1" />
+          <End Type="ModelDecsoft.CiudadActual" Role="CiudadActual" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Migrantes">
+              <PropertyRef Name="idmigrante" />
+            </Principal>
+            <Dependent Role="CiudadActual">
+              <PropertyRef Name="Migrantes_idmigrante" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="AmigosFamiliaresSituacionLaboral">
+          <End Type="ModelDecsoft.AmigosFamiliares" Role="AmigosFamiliares" Multiplicity="1" />
+          <End Type="ModelDecsoft.SituacionLaboral" Role="SituacionLaboral" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AmigosFamiliares">
+              <PropertyRef Name="idAmigosFamiliares" />
+            </Principal>
+            <Dependent Role="SituacionLaboral">
+              <PropertyRef Name="AmigosFamiliares_idAmigosFamiliares" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="MigrantesSituacionLaboral">
+          <End Type="ModelDecsoft.Migrantes" Role="Migrantes" Multiplicity="1" />
+          <End Type="ModelDecsoft.SituacionLaboral" Role="SituacionLaboral" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Migrantes">
+              <PropertyRef Name="idmigrante" />
+            </Principal>
+            <Dependent Role="SituacionLaboral">
+              <PropertyRef Name="Migrantes_idmigrante" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EntidadColaboradoraSector">
+          <End Type="ModelDecsoft.EntidadColaboradora" Role="EntidadColaboradora" Multiplicity="1" />
+          <End Type="ModelDecsoft.Sector" Role="Sector" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EntidadColaboradora">
+              <PropertyRef Name="idEntidadColaboradora" />
+            </Principal>
+            <Dependent Role="Sector">
+              <PropertyRef Name="EntidadColaboradora_idEntidadColaboradora" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EntidadColaboradoraNecesidad">
+          <End Type="ModelDecsoft.EntidadColaboradora" Role="EntidadColaboradora" Multiplicity="1" />
+          <End Type="ModelDecsoft.Necesidad" Role="Necesidad" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EntidadColaboradora">
+              <PropertyRef Name="idEntidadColaboradora" />
+            </Principal>
+            <Dependent Role="Necesidad">
+              <PropertyRef Name="EntidadColaboradora_idEntidadColaboradora" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="EntidadColaboradoraServicio">
+          <End Type="ModelDecsoft.EntidadColaboradora" Role="EntidadColaboradora" Multiplicity="1" />
+          <End Type="ModelDecsoft.Servicio" Role="Servicio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EntidadColaboradora">
+              <PropertyRef Name="idEntidadColaboradora" />
+            </Principal>
+            <Dependent Role="Servicio">
+              <PropertyRef Name="EntidadColaboradora_idEntidadColaboradora" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SolicitudMigrantes">
+          <End Type="ModelDecsoft.Solicitud" Role="Solicitud" Multiplicity="1" />
+          <End Type="ModelDecsoft.Migrantes" Role="Migrantes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Solicitud">
+              <PropertyRef Name="idSolicitud" />
+            </Principal>
+            <Dependent Role="Migrantes">
+              <PropertyRef Name="Solicitud_idSolicitud" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SolicitudAmigosFamiliares">
+          <End Type="ModelDecsoft.Solicitud" Role="Solicitud" Multiplicity="1" />
+          <End Type="ModelDecsoft.AmigosFamiliares" Role="AmigosFamiliares" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Solicitud">
+              <PropertyRef Name="idSolicitud" />
+            </Principal>
+            <Dependent Role="AmigosFamiliares">
+              <PropertyRef Name="Solicitud_idSolicitud" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="SolicitudServicio">
+          <End Type="ModelDecsoft.Solicitud" Role="Solicitud" Multiplicity="1" />
+          <End Type="ModelDecsoft.Servicio" Role="Servicio" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Solicitud">
+              <PropertyRef Name="idSolicitud" />
+            </Principal>
+            <Dependent Role="Servicio">
+              <PropertyRef Name="Solicitud_idSolicitud" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelDecsoftStoreContainer" CdmEntityContainer="DecsoftEntitiesconect">
+          <EntitySetMapping Name="AmigosFamiliares">
+            <EntityTypeMapping TypeName="ModelDecsoft.AmigosFamiliares">
+              <MappingFragment StoreEntitySet="AmigosFamiliares">
+                <ScalarProperty Name="idAmigosFamiliares" ColumnName="idAmigosFamiliares" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+                <ScalarProperty Name="No_documento" ColumnName="No_documento" />
+                <ScalarProperty Name="pais_origen" ColumnName="pais_origen" />
+                <ScalarProperty Name="correo" ColumnName="correo" />
+                <ScalarProperty Name="fecha_nacimiento" ColumnName="fecha_nacimiento" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="ciudad" ColumnName="ciudad" />
+                <ScalarProperty Name="situacionlaboral" ColumnName="situacionlaboral" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CiudadActual">
+            <EntityTypeMapping TypeName="ModelDecsoft.CiudadActual">
+              <MappingFragment StoreEntitySet="CiudadActual">
+                <ScalarProperty Name="idCiudadActual" ColumnName="idCiudadActual" />
+                <ScalarProperty Name="ciudad_Actual" ColumnName="ciudad_Actual" />
+                <ScalarProperty Name="departamento" ColumnName="departamento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EntidadColaboradora">
+            <EntityTypeMapping TypeName="ModelDecsoft.EntidadColaboradora">
+              <MappingFragment StoreEntitySet="EntidadColaboradora">
+                <ScalarProperty Name="idEntidadColaboradora" ColumnName="idEntidadColaboradora" />
+                <ScalarProperty Name="razon_social" ColumnName="razon_social" />
+                <ScalarProperty Name="NIT" ColumnName="NIT" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="correo" ColumnName="correo" />
+                <ScalarProperty Name="pagina_web" ColumnName="pagina_web" />
+                <ScalarProperty Name="sector" ColumnName="sector" />
+                <ScalarProperty Name="servicio" ColumnName="servicio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Migrantes">
+            <EntityTypeMapping TypeName="ModelDecsoft.Migrantes">
+              <MappingFragment StoreEntitySet="Migrantes">
+                <ScalarProperty Name="idmigrante" ColumnName="idmigrante" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="apellido" ColumnName="apellido" />
+                <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+                <ScalarProperty Name="No_documento" ColumnName="No_documento" />
+                <ScalarProperty Name="pais_origen" ColumnName="pais_origen" />
+                <ScalarProperty Name="correo" ColumnName="correo" />
+                <ScalarProperty Name="fecha_nacimiento" ColumnName="fecha_nacimiento" />
+                <ScalarProperty Name="telefono" ColumnName="telefono" />
+                <ScalarProperty Name="direccion" ColumnName="direccion" />
+                <ScalarProperty Name="ciudad_actual" ColumnName="ciudad_actual" />
+                <ScalarProperty Name="situacion_laboral" ColumnName="situacion_laboral" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Necesidad">
+            <EntityTypeMapping TypeName="ModelDecsoft.Necesidad">
+              <MappingFragment StoreEntitySet="Necesidad">
+                <ScalarProperty Name="idnecesidad" ColumnName="idnecesidad" />
+                <ScalarProperty Name="salud" ColumnName="salud" />
+                <ScalarProperty Name="alimentacion" ColumnName="alimentacion" />
+                <ScalarProperty Name="empleo" ColumnName="empleo" />
+                <ScalarProperty Name="alojamiento_temporal" ColumnName="alojamiento:temporal" />
+                <ScalarProperty Name="alojamiento_permanente" ColumnName="alojamiento_permanente" />
+                <ScalarProperty Name="educacion" ColumnName="educacion" />
+                <ScalarProperty Name="ayuda_legal" ColumnName="ayuda_legal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sector">
+            <EntityTypeMapping TypeName="ModelDecsoft.Sector">
+              <MappingFragment StoreEntitySet="Sector">
+                <ScalarProperty Name="idsector" ColumnName="idsector" />
+                <ScalarProperty Name="publico" ColumnName="publico" />
+                <ScalarProperty Name="privado" ColumnName="privado" />
+                <ScalarProperty Name="sin_animo_lucro" ColumnName="sin_animo_lucro" />
+                <ScalarProperty Name="no_gubernamental" ColumnName="no_gubernamental" />
+                <ScalarProperty Name="otro" ColumnName="otro" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Servicio">
+            <EntityTypeMapping TypeName="ModelDecsoft.Servicio">
+              <MappingFragment StoreEntitySet="Servicio">
+                <ScalarProperty Name="idservicio" ColumnName="idservicio" />
+                <ScalarProperty Name="salud" ColumnName="salud" />
+                <ScalarProperty Name="juridicos" ColumnName="juridicos" />
+                <ScalarProperty Name="viveres" ColumnName="viveres" />
+                <ScalarProperty Name="comida_preparada" ColumnName="comida_preparada" />
+                <ScalarProperty Name="empleo" ColumnName="empleo" />
+                <ScalarProperty Name="alojamiento_temporal" ColumnName="alojamiento_temporal" />
+                <ScalarProperty Name="alojamiento_permanente" ColumnName="alojamiento_permanente" />
+                <ScalarProperty Name="educacion" ColumnName="educacion" />
+                <ScalarProperty Name="otros" ColumnName="otros" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SituacionLaboral">
+            <EntityTypeMapping TypeName="ModelDecsoft.SituacionLaboral">
+              <MappingFragment StoreEntitySet="SituacionLaboral">
+                <ScalarProperty Name="idSituacionLaboral" ColumnName="idSituacionLaboral" />
+                <ScalarProperty Name="temporal" ColumnName="temporal" />
+                <ScalarProperty Name="fijo" ColumnName="fijo" />
+                <ScalarProperty Name="informal" ColumnName="informal" />
+                <ScalarProperty Name="ama_de_casa" ColumnName="ama_de_casa" />
+                <ScalarProperty Name="desempleado" ColumnName="desempleado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Solicitud">
+            <EntityTypeMapping TypeName="ModelDecsoft.Solicitud">
+              <MappingFragment StoreEntitySet="Solicitud">
+                <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+                <ScalarProperty Name="servicio" ColumnName="servicio" />
+                <ScalarProperty Name="fecha_solicitud" ColumnName="fecha_solicitud" />
+                <ScalarProperty Name="migrante" ColumnName="migrante" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
