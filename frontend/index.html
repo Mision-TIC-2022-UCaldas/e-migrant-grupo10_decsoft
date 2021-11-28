@@ -20,6 +20,11 @@
         <h1>BIENVENIDOS A ¡E-MIGRANT!</h1>
         <br>
         <a href="emergencia.html"><button type="button" class="btn btn-danger">¡EMERGENCIA!</button></a>
+        <BR>
+        <a href="necesidades.html">NECESIDADES</a>
+        ||
+        <a href="consultaGrupos.html">Consulta de grupos</a>
+
 
         <div class="row">
             <div class="col">
@@ -50,24 +55,21 @@
 
                                 <label for="nombre" class="form-label">Nombre</label>
                                 <input id="nombre" name="nombre" type="text" class="form-control" required>
-                                <div class="valid-tooltip">ok</div>
-                                <div class="invalid-tooltip">Complete los datos</div>
+                              
 
                             </div>
                             <div class="col-md-3 position-relative">
 
                                 <label for="nombre" class="form-label">Apellido</label>
                                 <input id="Apellido" name="apellido" type="text" class="form-control" required>
-                                <div class="valid-tooltip">ok</div>
-                                <div class="invalid-tooltip">Complete los datos</div>
+                      
                             </div>
                             
                             <div class="col-md-3 position-relative">
 
                                 <label for="fecha_nacimiento" class="form-label">Fecha Nacimiento</label>
                                 <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" class="form-control" required>
-                                <div class="valid-tooltip">ok</div>
-                                <div class="invalid-tooltip">Complete los datos</div>
+                           
 
                             </div>
 
@@ -82,14 +84,13 @@
                                     <option value="">Pánama</option>
                                     <option value="">Venezuela</option>
                                 </select>
-                                <div class="valid-tooltip">ok</div>
-                                <div class="invalid-tooltip">Complete los datos</div>
+                        
                             </div>
 
                             <div class="col-md-3 position-relative">
 
                                 <label for="ciudad" class="form-label">Ciudad</label><br>
-                                <input id="ciudad" name="ciudad" type="text" class="form-label" >
+                                <input id="ciudad" name="ciudad" type="text" class="form-select" required>
                                
 
                             </div>
@@ -104,14 +105,13 @@
                                     <option value="">Registro Unico Identificacion</option>
                                     <option value="">Permiso Migratorio</option>
                                 </select>
-                                <div class="valid-tooltip">ok</div>
-                                <div class="invalid-tooltip">Complete los datos</div>
+                              
                             </div>
 
                             <div class="col-md-3 position-relative">
 
                                 <label for="correo" class="form-label">Email/Correo</label>
-                                <input id="correo" name="correo" type="text" class="form-label" >
+                                <input id="correo" name="correo" type="text" class="form-select" required>
                                 
 
                             </div>
@@ -119,7 +119,7 @@
                             <div class="col-md-3 position-relative">
 
                                 <label for="telefono" class="form-label">Telefono</label>
-                                <input id="telefono" name="telefono" type="tel" class="form-label" >
+                                <input id="telefono" name="telefono" type="tel" class="form-select" required>
                                
 
                             </div>
@@ -127,13 +127,13 @@
                             <div class="col-md-3 position-relative">
 
                                 <label for="direccion" class="form-label">Direccion Actual</label>
-                                <input id="direccion" name="direccion" type="text" class="form-label" >
+                                <input id="direccion" name="direccion" type="text" class="form-select" required >
 
                             </div>
 
                             <div class="col-md-3 position-relative">
                                 <label for="sLaboral">Situacion Laboral</label>
-                                <select name="sLaboral" id="sLaboral" class="form-select" >
+                                <select name="sLaboral" id="sLaboral" class="form-select" required>
                                     <option selected disabled value="">Seleccione..</option>
                                     <option value="">Desempleado</option>
                                     <option value="">Empleado</option>
@@ -152,15 +152,23 @@
                                 <label>Registrese ó Inicie Secion:</label>
                                 <div class="col-md-3 position-relative">
                                     <label for="user" class="form-text">Usuario</label><br>
-                                    <input id="user" name="user" type="text" class="form-label"required>
-                                    <div class="valid-tooltip">ok</div>
-                                <div class="invalid-tooltip">Complete los datos</div>
+                                    <input id="user" name="user" type="text" class="form-select"required>
+                        
                                 </div>
                                 <div class="col-md-3 position-relative">
                                     <label for="contraseña" class="form-text">contraseña</label><br>
-                                    <input id="pass" name="pass" type="text" class="form-label"required>
-                                    <div class="valid-tooltip">ok</div>
-                                <div class="invalid-tooltip">Complete los datos</div>
+                                    <input id="pass" name="pass" type="text" class="form-select"required>
+                       
+                                </div>
+
+                                <div class="col-md-3 position-relative">
+                                    <label for="Tusuario">Tipo Usuario</label>
+                                    <select name="Tusuario" id="Tusuario" class="form-select" required>
+                                        <option selected disabled value="">Seleccione</option>
+                                        <option value="">Beneficiario</option>
+                                        <option value="">Administrador</option>
+                                    </select>
+                           
                                 </div>
                                 
                             </div>
@@ -171,109 +179,6 @@
                             <br>
                             <a href="#" class="btn btn-primary">Actualizar Datos</a>
                             
-                            <div>
-                                <a href="consultaGrupo.html">Consulta tus grupos</a>
-                                <fieldset>                      <!--tercer punto-->
-                                    <legend>Crear Grupo</legend>
-
-                                    
-                                    <input type="text" id="parentezco"/>
-                                    <input type="button" value="parentezco" onclick="parentezco()"/>
-                                    <input type="text" id="cGrupo"/>
-                                    <input type="button" value="Crear" onclick="Crear()"/>
-
-                                    
-                                        
-                                    
-
-                                    <!--<label for="nombre" class="form-label"></label>-->
-                                    
-                                    <div>
-                                        
-                                    </div><textarea name="CGrupo" id="CGrupo" cols="30" rows="10"></textarea>
-
-                                    <div class="row">
-                                        <div class="col">
-                                        </div>
-                                        <div class="col-auto">
-                                    <input type="text" id="enviarMensaje"/>
-                                    <input type="button" value="Enviar mensaje al grupo" onclick="enviarMensajeG()"/>
-                                    <textarea name="enviarMensaj" id="" cols="30" rows="10"></textarea>
-                                    <div>
-                                
-                                </fieldset>
-                            </div>
-                            <br>
-
-                            <!--5 punto-->
-
-                            <h2>Necesidades:</h2>
-                           
-                            <div class="col-md-3 position-relative">
-                                <label for="salud">Tipo Salud</label>
-                                <select name="salud" id="salud" class="form-select" >
-                                    <option selected disabled value="">descripcion:</option>
-                                    <option value="">Baja</option>
-                                    <option value="">Media</option>
-                                    <option value="">Alta</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 position-relative">
-                                <label for="alimentacion">Alimentacion</label>
-                                <select name="alimentacion" id="alimentacion" class="form-select" >
-                                    <option selected disabled value="">descripcion:</option>
-                                    <option value="">Baja</option>
-                                    <option value="">Media</option>
-                                    <option value="">Alta</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 position-relative">
-                                <label for="empleo">Empleo</label>
-                                <select name="empleo" id="empleo" class="form-select" >
-                                    <option selected disabled value="">descripcion:</option>
-                                    <option value="">Baja</option>
-                                    <option value="">Media</option>
-                                    <option value="">Alta</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 position-relative">
-                                <label for="alojamientoT">Alojamiento Temporal</label>
-                                <select name="alojamientoT" id="alojamientoT" class="form-select" >
-                                    <option selected disabled value="">descripcion:</option>
-                                    <option value="">Baja</option>
-                                    <option value="">Media</option>
-                                    <option value="">Alta</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 position-relative">
-                                <label for="alojamientoP">Alojamiento Permanente</label>
-                                <select name="alojamientoP" id="alojamientoP" class="form-select" >
-                                    <option selected disabled value="">descripcion:</option>
-                                    <option value="">Baja</option>
-                                    <option value="">Media</option>
-                                    <option value="">Alta</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 position-relative">
-                                <label for="educacion">Educacion</label>
-                                <select name="educacion" id="educacion" class="form-select" >
-                                    <option selected disabled value="">descripcion:</option>
-                                    <option value="">Baja</option>
-                                    <option value="">Media</option>
-                                    <option value="">Alta</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3 position-relative">
-                                <label for="ayudaL">Ayuda Legal</label>
-                                <select name="ayudaL" id="ayudaL" class="form-select" >
-                                    <option selected disabled value="">descripcion:</option>
-                                    <option value="">Baja</option>
-                                    <option value="">Media</option>
-                                    <option value="">Alta</option>
-                                </select>
-                            </div>
-
-
 
                         </form>
                     </div>
