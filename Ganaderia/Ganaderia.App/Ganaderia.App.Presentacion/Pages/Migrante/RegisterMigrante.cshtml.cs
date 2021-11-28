@@ -15,14 +15,11 @@ namespace Ganaderia.App.Presentacion.Pages
         private static IRepositorioMigrantes _repositorioMigrantes = new RepositorioMigrantes(new Persistencia.AppContext());
         public Migrante migrante { get; set; }
         public List<Migrante> migrantes { get; set; }
-        public void OnGet()
+        public IActionResult OnGet()
         {
-            /*
-            migrantes = _repositorioMigrantes.ListMigrantes().ToList();
             
-           return Page();
-            */
-            
+        migrantes = _repositorioMigrantes.ListMigrantes().ToList();
+        return Page();
 
 
         }
@@ -37,9 +34,9 @@ namespace Ganaderia.App.Presentacion.Pages
                 Nombre = nombres,
                 Apellidos = apellidos,
                 Tipo_documento = tdocumento,
-                Documento = documento,
+                No_Documento = documento,
                 Pais_origen = pais,
-                Fecha_nacimiento = nacimiento,
+                Fecha_nacimiento = DateTime.Parse(nacimiento),
                 Email = email,
                 Telefono = telefono,
                 Direccion_actual = direccion,
@@ -53,7 +50,7 @@ namespace Ganaderia.App.Presentacion.Pages
             //Console.WriteLine("Nombres A guardar2: "+ganadero.Nombres);
             //Console.WriteLine("A guardar: "+migrante.Nombre);
             _repositorioMigrantes.AddMigrantes(migrante);
-            return Redirect("RegisterMigrante");
+            return Redirect("../Index");
         }
 
     }

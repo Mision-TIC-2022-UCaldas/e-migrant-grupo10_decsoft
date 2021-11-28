@@ -6,7 +6,8 @@ namespace Ganaderia.App.Persistencia
     public class AppContext : DbContext 
     {
         public DbSet<Migrante> Migrantes {get; set;}
-
+        public DbSet<Necesidad> Necesidades {get; set;}
+        public DbSet<Servicio> Servicios {get; set;}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
         {
             if (!optionsBuilder.IsConfigured) 

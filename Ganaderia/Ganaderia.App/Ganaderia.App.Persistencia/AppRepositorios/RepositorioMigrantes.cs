@@ -52,10 +52,12 @@ void IRepositorioMigrantes.ActualizarMigrante(int idMigrante, Migrante nuevo)
 {
             
             var migrante=_appContext.Migrantes.FirstOrDefault(e => e.Id == idMigrante);
+            if (migrante != null)
+        {
             migrante.Nombre=nuevo.Nombre;
             migrante.Apellidos=nuevo.Apellidos;
             migrante.Tipo_documento=nuevo.Tipo_documento;
-            migrante.Documento=nuevo.Documento;
+            migrante.No_Documento=nuevo.No_Documento;
             migrante.Pais_origen=nuevo.Pais_origen;
             migrante.Fecha_nacimiento=nuevo.Fecha_nacimiento;
             migrante.Email=nuevo.Email;
@@ -65,10 +67,11 @@ void IRepositorioMigrantes.ActualizarMigrante(int idMigrante, Migrante nuevo)
             migrante.Situacion_laboral=nuevo.Situacion_laboral;
             migrante.Usuario=nuevo.Usuario;
             migrante.Contrasena=nuevo.Contrasena;
+            
             _appContext.SaveChanges();
         }
-
-
+            
+        }
 
     }
 

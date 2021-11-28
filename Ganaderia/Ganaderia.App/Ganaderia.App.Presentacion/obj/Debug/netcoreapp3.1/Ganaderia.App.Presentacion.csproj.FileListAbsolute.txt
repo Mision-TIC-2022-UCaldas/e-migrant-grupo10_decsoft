@@ -297,7 +297,6 @@ C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganad
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutAdmin.cshtml.g.cs
-C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutGanadero.cshtml.g.cs
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutLogin.cshtml.g.cs
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutVeterinario.cshtml.g.cs
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -313,3 +312,7 @@ C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganad
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Ganaderia.App.Presentacion.dll
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Ganaderia.App.Presentacion.pdb
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Ganaderia.App.Presentacion.genruntimeconfig.cache
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Migrante\MigranteInicio.cshtml.g.cs
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutMigrante.cshtml.g.cs
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Migrante\MigranteBuscar.cshtml.g.cs
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Migrante\MigranteUpdate.cshtml.g.cs

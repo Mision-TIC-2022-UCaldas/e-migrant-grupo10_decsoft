@@ -1,0 +1,22 @@
+﻿@page
+@model Ganaderia.App.Presentacion.Pages.MigranteUpdateModel
+@{
+Layout = "~/Pages/Shared/_LayoutMigrante.cshtml";
+ViewData["Title"] = "Migrante";
+}
+<form method="post">
+    <p>Nombres <input type="text" name="nombres" value="@Model.migrante.Nombre"> </p>
+    <p>Apellidos <input type="text" name="apellidos" value="@Model.migrante.Apellidos"> </p>
+    <p>Tipo de documento <input type="text" name="tdocumento" value="@Model.migrante.Tipo_documento"> </p>
+    <p>Numero de documento <input type="text" name="documento" value="@Model.migrante.No_Documento"> </p>
+    <p>Pais de origen <input type="text" name="pais" value="@Model.migrante.Pais_origen"> </p>
+    <p>Fecha de nacimiento <input type="date" name="nacimiento" value="@Model.fecha"> </p>
+    <p>Email <input type="email" name="email" value="@Model.migrante.Email"> </p>
+    <p>Telefono <input type="text" name="telefono" value="@Model.migrante.Telefono"> </p>
+    <p>Dirección actual <input type="text" name="direccion" value="@Model.migrante.Direccion_actual"> </p>
+    <p>Ciudad <input type="text" name="ciudad" value="@Model.migrante.Ciudad"> </p>
+    <p>Situacion laboral <input type="text" name="slaboral" value="@Model.migrante.Situacion_laboral"> </p>
+    <p>Usuario <input type="text" name="usuario" value="@Model.migrante.Usuario"> </p>
+    <p>Contrasena <input type="password" name="clave" value="@Model.migrante.Contrasena"> </p>
+    <p><input type="submit" value="guardar" asp-page-handler="Actualizar"></p>
+</form>

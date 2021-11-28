@@ -7,7 +7,7 @@ namespace Ganaderia.App.Dominio
         public int Id { get; set; }
         public DateTime Fecha_solicitud {get; set;} 
         public DateTime Fecha_respuesta {get; set;} 
-        public string Entidad {get; set;} 
+        public string Servicio {get; set;} 
         public string Estado {get; set;} 
         
     }

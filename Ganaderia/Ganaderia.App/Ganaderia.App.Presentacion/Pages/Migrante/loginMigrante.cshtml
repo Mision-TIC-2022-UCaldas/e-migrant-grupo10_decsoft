@@ -5,9 +5,9 @@ Layout = "~/Pages/Shared/_layoutLogin.cshtml";
 ViewData["Title"] = "Migrante";
 }
 
-<form>
+<form method="post">
     
     <p>Usuario <input type="text" name="usuario"> </p>
     <p>Contrasena <input type="password" name="clave"> </p>
-    <p><input type="submit" value="Ingresar" asp-page-handler="Register"></p>
+    <p><input type="submit" value="Ingresar" asp-page-handler="Login"></p>
 </form>

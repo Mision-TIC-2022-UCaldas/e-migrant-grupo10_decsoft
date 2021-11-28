@@ -1,0 +1,15 @@
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\bin\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.deps.json
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\bin\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.runtimeconfig.json
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\bin\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.runtimeconfig.dev.json
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\bin\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.dll
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\bin\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.pdb
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\bin\Debug\netcoreapp3.1\Ganaderia.App.Dominio.dll
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\bin\Debug\netcoreapp3.1\Ganaderia.App.Dominio.pdb
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\obj\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\obj\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\obj\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.AssemblyInfo.cs
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\obj\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\obj\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.csproj.CopyComplete
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\obj\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.dll
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\obj\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.pdb
+C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Persistencia\obj\Debug\netcoreapp3.1\Ganaderia.App.Persistencia.genruntimeconfig.cache
