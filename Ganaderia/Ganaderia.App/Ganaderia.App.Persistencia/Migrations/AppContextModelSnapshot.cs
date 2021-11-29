@@ -149,7 +149,7 @@ namespace Ganaderia.App.Persistencia.Migrations
 
                     b.HasIndex("NecesidadId");
 
-                    b.ToTable("Servicio");
+                    b.ToTable("Servicios");
                 });
 
             modelBuilder.Entity("Ganaderia.App.Dominio.Necesidad", b =>

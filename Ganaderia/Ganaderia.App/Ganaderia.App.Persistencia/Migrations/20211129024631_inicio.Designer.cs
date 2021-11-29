@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ganaderia.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211128200818_inicio")]
+    [Migration("20211129024631_inicio")]
     partial class inicio
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -151,7 +151,7 @@ namespace Ganaderia.App.Persistencia.Migrations
 
                     b.HasIndex("NecesidadId");
 
-                    b.ToTable("Servicio");
+                    b.ToTable("Servicios");
                 });
 
             modelBuilder.Entity("Ganaderia.App.Dominio.Necesidad", b =>

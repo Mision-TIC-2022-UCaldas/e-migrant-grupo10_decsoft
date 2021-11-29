@@ -52,3 +52,13 @@ C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganad
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Dominio\obj\Debug\netstandard2.1\Ganaderia.App.Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Dominio\obj\Debug\netstandard2.1\Ganaderia.App.Dominio.dll
 C:\Users\Sebastian\Documents\proyecto-g1-DS-master\Ganaderia\Ganaderia.App\Ganaderia.App.Dominio\obj\Debug\netstandard2.1\Ganaderia.App.Dominio.pdb
+D:\Decsoft\e-migrant-grupo10_decsoft\ganaderia\Ganaderia.app\Ganaderia.App.Dominio\bin\Debug\netstandard2.1\Ganaderia.App.Dominio.deps.json
+D:\Decsoft\e-migrant-grupo10_decsoft\ganaderia\Ganaderia.app\Ganaderia.App.Dominio\bin\Debug\netstandard2.1\Ganaderia.App.Dominio.dll
+D:\Decsoft\e-migrant-grupo10_decsoft\ganaderia\Ganaderia.app\Ganaderia.App.Dominio\bin\Debug\netstandard2.1\Ganaderia.App.Dominio.pdb
+D:\Decsoft\e-migrant-grupo10_decsoft\ganaderia\Ganaderia.app\Ganaderia.App.Dominio\obj\Debug\netstandard2.1\Ganaderia.App.Dominio.csproj.AssemblyReference.cache
+D:\Decsoft\e-migrant-grupo10_decsoft\ganaderia\Ganaderia.app\Ganaderia.App.Dominio\obj\Debug\netstandard2.1\Ganaderia.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Decsoft\e-migrant-grupo10_decsoft\ganaderia\Ganaderia.app\Ganaderia.App.Dominio\obj\Debug\netstandard2.1\Ganaderia.App.Dominio.AssemblyInfoInputs.cache
+D:\Decsoft\e-migrant-grupo10_decsoft\ganaderia\Ganaderia.app\Ganaderia.App.Dominio\obj\Debug\netstandard2.1\Ganaderia.App.Dominio.AssemblyInfo.cs
+D:\Decsoft\e-migrant-grupo10_decsoft\ganaderia\Ganaderia.app\Ganaderia.App.Dominio\obj\Debug\netstandard2.1\Ganaderia.App.Dominio.csproj.CoreCompileInputs.cache
+D:\Decsoft\e-migrant-grupo10_decsoft\ganaderia\Ganaderia.app\Ganaderia.App.Dominio\obj\Debug\netstandard2.1\Ganaderia.App.Dominio.dll
+D:\Decsoft\e-migrant-grupo10_decsoft\ganaderia\Ganaderia.app\Ganaderia.App.Dominio\obj\Debug\netstandard2.1\Ganaderia.App.Dominio.pdb

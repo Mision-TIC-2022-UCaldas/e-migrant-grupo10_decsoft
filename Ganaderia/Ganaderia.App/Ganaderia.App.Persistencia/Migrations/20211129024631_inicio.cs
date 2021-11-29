@@ -59,7 +59,7 @@ namespace Ganaderia.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Servicio",
+                name: "Servicios",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -77,9 +77,9 @@ namespace Ganaderia.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Servicio", x => x.Id);
+                    table.PrimaryKey("PK_Servicios", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Servicio_Necesidades_NecesidadId",
+                        name: "FK_Servicios_Necesidades_NecesidadId",
                         column: x => x.NecesidadId,
                         principalTable: "Necesidades",
                         principalColumn: "Id",
@@ -92,15 +92,15 @@ namespace Ganaderia.App.Persistencia.Migrations
                 column: "MigranteId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Servicio_NecesidadId",
-                table: "Servicio",
+                name: "IX_Servicios_NecesidadId",
+                table: "Servicios",
                 column: "NecesidadId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Servicio");
+                name: "Servicios");
 
             migrationBuilder.DropTable(
                 name: "Necesidades");
