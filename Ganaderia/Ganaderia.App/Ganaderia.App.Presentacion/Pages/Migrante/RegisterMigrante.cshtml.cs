@@ -50,7 +50,7 @@ namespace Ganaderia.App.Presentacion.Pages
             //Console.WriteLine("Nombres A guardar2: "+ganadero.Nombres);
             //Console.WriteLine("A guardar: "+migrante.Nombre);
             _repositorioMigrantes.AddMigrantes(migrante);
-            return Redirect("../Index");
+            return Page();
         }
 
     }
