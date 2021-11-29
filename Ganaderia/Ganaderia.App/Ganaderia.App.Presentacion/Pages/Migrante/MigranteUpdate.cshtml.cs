@@ -49,8 +49,9 @@ namespace Ganaderia.App.Presentacion.Pages
             };
             var ide=Int32.Parse(Request.Cookies["Id"]);
             Console.WriteLine("id de usuario: "+(ide));
-            
+            migrante=_repositorioMigrantes.GetMigrante(ide);
             _repositorioMigrantes.ActualizarMigrante(ide, nuevo);
+            fecha=migrante.Fecha_nacimiento.Date.ToString("yyyy-MM-dd");
             return Page();
                          
         }
